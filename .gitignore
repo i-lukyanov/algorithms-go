@@ -1,0 +1,5 @@
+.idea
+.env
+.golangci.*
+config.yaml
+*.log

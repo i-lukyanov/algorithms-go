@@ -4,6 +4,7 @@ import (
 	"algorithms/config"
 	"algorithms/pkg/common"
 	"algorithms/pkg/go_tour"
+	"algorithms/pkg/leetcode"
 	"errors"
 )
 
@@ -32,6 +33,7 @@ func (s *Service) Run() error {
 	case common.PackageGoTour:
 		return go_tour.RunExercise(s.Cfg, s.Args[1])
 	case common.PackageLeetcode:
+		return leetcode.RunExercise(s.Cfg, s.Args[1])
 	case common.PackageHackerrank:
 	case common.PackageCodewars:
 	default:

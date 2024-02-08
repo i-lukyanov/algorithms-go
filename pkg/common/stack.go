@@ -4,18 +4,42 @@ type StackInt struct {
 	items []int
 }
 
-func (s *StackInt) Push(item int) {
-	s.items = append(s.items, item)
+func (si *StackInt) Push(item int) {
+	si.items = append(si.items, item)
 }
 
-func (s *StackInt) Pop() (item int, ok bool) {
-	sl := len(s.items)
+func (si *StackInt) Pop() (item int, ok bool) {
+	sl := len(si.items)
 	if sl == 0 {
 		return 0, false
 	}
 
-	item = s.items[sl-1]
-	s.items = s.items[:sl-1]
+	item = si.items[sl-1]
+	si.items = si.items[:sl-1]
 
 	return item, true
+}
+
+type StackString struct {
+	items []string
+}
+
+func (ss *StackString) Push(item string) {
+	ss.items = append(ss.items, item)
+}
+
+func (ss *StackString) Pop() (item string, ok bool) {
+	sl := len(ss.items)
+	if sl == 0 {
+		return "", false
+	}
+
+	item = ss.items[sl-1]
+	ss.items = ss.items[:sl-1]
+
+	return item, true
+}
+
+func (ss *StackString) Len() int {
+	return len(ss.items)
 }

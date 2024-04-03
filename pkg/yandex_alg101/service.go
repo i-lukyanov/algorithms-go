@@ -1,4 +1,4 @@
-package yandex_alg10
+package yandex_alg101
 
 import (
 	"algorithms/config"
@@ -7,7 +7,16 @@ import (
 )
 
 var exerciseMap = map[string]common.Exercise{
-	"a_conditioner": AConditioner{},
+	"a_conditioner":   AConditioner{},
+	"b_triangle":      BTriangle{},
+	"c_phone_numbers": CPhoneNumbers{},
+	"d_sqrt_equasion": DSqrtEquasion{},
+	"e_ambulance":     EAmbulance{},
+	"f_notebooks":     FNotebooks{},
+	"g_details":       GDetails{},
+	"h_metro":         HMetro{},
+	"i_if":            IIf{},
+	"j_system":        JSystem{},
 }
 
 func RunExercise(cfg *config.Config, name string) error {

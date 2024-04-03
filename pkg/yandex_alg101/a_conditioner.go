@@ -1,4 +1,4 @@
-package yandex_alg10
+package yandex_alg101
 
 import (
 	"bufio"
@@ -26,12 +26,12 @@ func (e AConditioner) Run() {
 	reg = strings.Replace(reg, "\n", "", -1)
 
 	tSlice := strings.Split(temps, " ")
-	res := getTemp(tSlice, reg)
+	res := e.getTemp(tSlice, reg)
 
 	fmt.Println(res)
 }
 
-func getTemp(tempSlice []string, regime string) int {
+func (e AConditioner) getTemp(tempSlice []string, regime string) int {
 	tRoom, _ := strconv.Atoi(tempSlice[0])
 	tCond, _ := strconv.Atoi(tempSlice[1])
 

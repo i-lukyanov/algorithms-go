@@ -6,6 +6,7 @@ const (
 	PackageHackerrank   = "hackerrank"
 	PackageCodewars     = "codewars"
 	PackageYandexAlg101 = "yandex_alg101"
+	PackageYandexAlg102 = "yandex_alg102"
 )
 
 const (

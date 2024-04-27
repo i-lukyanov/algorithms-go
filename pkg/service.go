@@ -6,6 +6,7 @@ import (
 	"algorithms/pkg/go_tour"
 	"algorithms/pkg/leetcode"
 	"algorithms/pkg/yandex_alg101"
+	"algorithms/pkg/yandex_alg102"
 	"errors"
 )
 
@@ -37,6 +38,8 @@ func (s *Service) Run() error {
 		return leetcode.RunExercise(s.Cfg, s.Args[1])
 	case common.PackageYandexAlg101:
 		return yandex_alg101.RunExercise(s.Cfg, s.Args[1])
+	case common.PackageYandexAlg102:
+		return yandex_alg102.RunExercise(s.Cfg, s.Args[1])
 	case common.PackageHackerrank:
 	case common.PackageCodewars:
 	default:

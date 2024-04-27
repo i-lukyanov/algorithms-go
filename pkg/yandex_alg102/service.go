@@ -14,6 +14,7 @@ var exerciseMap = map[string]common.Exercise{
 	"e_cow":           ECow{},
 	"f_symmetr":       FSymmetr{},
 	"g_2biggest":      G2Biggest{},
+	"h_3biggest":      H3Biggest{},
 }
 
 func RunExercise(cfg *config.Config, name string) error {

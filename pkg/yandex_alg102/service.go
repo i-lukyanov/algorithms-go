@@ -15,6 +15,8 @@ var exerciseMap = map[string]common.Exercise{
 	"f_symmetr":       FSymmetr{},
 	"g_2biggest":      G2Biggest{},
 	"h_3biggest":      H3Biggest{},
+	"i_minesweeper":   IMinesweeper{},
+	"j_triangle":      JTriangle{},
 }
 
 func RunExercise(cfg *config.Config, name string) error {

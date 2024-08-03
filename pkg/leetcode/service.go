@@ -16,6 +16,7 @@ var exerciseMap = map[string]common.Exercise{
 	"longest_palindrome_substr":        LongestPalindromeSubstr{},
 	"valid_parentheses":                ValidParentheses{},
 	"remove_node_from_linked_list_end": RemoveNodeFromLinkedListEnd{},
+	"divide_arr_with_max_diff":         DivideArrWithMaxDiff{},
 }
 
 func RunExercise(cfg *config.Config, name string) error {

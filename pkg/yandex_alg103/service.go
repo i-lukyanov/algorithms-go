@@ -11,6 +11,11 @@ var exerciseMap = map[string]common.Exercise{
 	"b_intersect":         BIntersect{},
 	"c_dice":              CDice{},
 	"d_words":             DWords{},
+	"e_opencalc":          EOpenCalc{},
+	"f_alien":             FAlien{},
+	"g_turtles":           GTurtles{},
+	"h_pigs":              HPigs{},
+	"i_lang":              ILang{},
 }
 
 func RunExercise(cfg *config.Config, name string) error {
